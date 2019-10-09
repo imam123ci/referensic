@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.tutorialspoint.com/cplusplus/cplusplus_mock_test.htm?min=76&max=100 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 02:36:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>C++ Mock Test - Tutorialspoint</title>
+<meta charset="utf-8">
+<meta name="description" content="C++ Mock Test - This section presents you various set of Mock Tests related to C++ Framework.  You can download these sample mock tests at your local machine and solve offline "/>
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code"/>
+<link rel="canonical" href="cplusplus_mock_test.html" />
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="../themes/css/style-min-v1.css">
+<script src="../themes/js/script-min-v1.js"></script>
+<script src="http://services.bilsyndication.com/adv1/?d=901" defer="" async=""></script>
+<script>var vitag = vitag || {};</script>
+<script>vitag.outStreamConfig = { enablePC: false, enableMobile: false };</script>  
+<script>function printPage() { window.print(); }</script>
+<style>
+.right-menu .mui-btn {
+    background-color:#004481;
+}
+a.demo {
+    background:#004481;
+}
+li.heading {
+    background:#004481;
+}
+.course-box{background:#004481}
+.home-intro-sub p{color:#004481}
+</style>
+</head>
+<body>
+<header id="header">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com/" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="images/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="https://www.tutorialspoint.com/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="https://www.tutorialspoint.com/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="https://www.tutorialspoint.com/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="https://www.tutorialspoint.com/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary" data-mui-toggle="dropdown">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="images/cpp-mini-logo.jpg" alt="C++ Tutorial" />
+</div>
+<ul class="toc chapters">
+<li class="heading">C++ Basics</li>
+<li><a href="index.html">C++ Home</a></li>
+<li><a href="cpp_overview.html">C++ Overview</a></li>
+<li><a href="cpp_environment_setup.html">C++ Environment Setup</a></li>
+<li><a href="cpp_basic_syntax.html">C++ Basic Syntax</a></li>
+<li><a href="cpp_comments.html">C++ Comments</a></li>
+<li><a href="cpp_data_types.html">C++ Data Types</a></li>
+<li><a href="cpp_variable_types.html">C++ Variable Types</a></li>
+<li><a href="cpp_variable_scope.html">C++ Variable Scope</a></li>
+<li><a href="cpp_constants_literals.html">C++ Constants/Literals</a></li>
+<li><a href="cpp_modifier_types.html">C++ Modifier Types</a></li>
+<li><a href="cpp_storage_classes.html">C++ Storage Classes</a></li>
+<li><a href="cpp_operators.html">C++ Operators</a></li>
+<li><a href="cpp_loop_types.html">C++ Loop Types</a></li>
+<li><a href="cpp_decision_making.html">C++ Decision Making</a></li>
+<li><a href="cpp_functions.html">C++ Functions</a></li>
+<li><a href="cpp_numbers.html">C++ Numbers</a></li>
+<li><a href="cpp_arrays.html">C++ Arrays</a></li>
+<li><a href="cpp_strings.html">C++ Strings</a></li>
+<li><a href="cpp_pointers.html">C++ Pointers</a></li>
+<li><a href="cpp_references.html">C++ References</a></li>
+<li><a href="cpp_date_time.html">C++ Date &amp; Time</a></li>
+<li><a href="cpp_basic_input_output.html">C++ Basic Input/Output</a></li>
+<li><a href="cpp_data_structures.html">C++ Data Structures</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Object Oriented</li>
+<li><a href="cpp_classes_objects.html">C++ Classes &amp; Objects</a></li>
+<li><a href="cpp_inheritance.html">C++ Inheritance</a></li>
+<li><a href="cpp_overloading.html">C++ Overloading</a></li>
+<li><a href="cpp_polymorphism.html">C++ Polymorphism</a></li>
+<li><a href="cpp_data_abstraction.html">C++ Abstraction</a></li>
+<li><a href="cpp_data_encapsulation.html">C++ Encapsulation</a></li>
+<li><a href="cpp_interfaces.html">C++ Interfaces</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Advanced</li>
+<li><a href="cpp_files_streams.html">C++ Files and Streams</a></li>
+<li><a href="cpp_exceptions_handling.html">C++ Exception Handling</a></li>
+<li><a href="cpp_dynamic_memory.html">C++ Dynamic Memory</a></li>
+<li><a href="cpp_namespaces.html">C++ Namespaces</a></li>
+<li><a href="cpp_templates.html">C++ Templates</a></li>
+<li><a href="cpp_preprocessor.html">C++ Preprocessor</a></li>
+<li><a href="cpp_signal_handling.html">C++ Signal Handling</a></li>
+<li><a href="cpp_multithreading.html">C++ Multithreading</a></li>
+<li><a href="cpp_web_programming.html">C++ Web Programming</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">C++ Useful Resources</li>
+<li><a href="cpp_questions_answers.html">C++ Questions and Answers</a></li>
+<li><a href="cpp_quick_guide.html">C++ Quick Guide</a></li>
+<li><a href="cpp_object_oriented.html">C++ Object Oriented</a></li>
+<li><a href="cpp_stl_tutorial.html">C++ STL Tutorial</a></li>
+<li><a href="cpp_standard_library.html">C++ Standard Library</a></li>
+<li><a href="cpp_useful_resources.html">C++ Useful Resources</a></li>
+<li><a href="cpp_discussion.html">C++ Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>C++ Mock Test</h1>
+<hr />
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center;" class="google-top-ads">
+<script><!--
+google_ad_client = "pub-7133395778201029";
+var width = document.getElementsByClassName("tutorial-content")[0].clientWidth - 40;
+google_ad_width = width;
+google_ad_height = 150;
+google_ad_format = width + "x150_as";
+google_ad_type = "image";
+google_ad_channel = "";
+//--></script>
+<script src="../../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+</div>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="cpp_questions_answers.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cpp_questions_answers.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>This section presents you various set of Mock Tests related to <b>C++ Framework</b>.  You can download these sample mock tests at your local machine and solve offline at your convenience. Every mock test is supplied with a mock test key to let you verify the final score and grade yourself.</p>
+<img src="../images/online_mock_tests.png" alt="Questions and Answers" />
+<a href="cplusplus_mock_test56cb.html?min=1&amp;max=25"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test I</button></a>
+<a href="cplusplus_mock_testc907.html?min=26&amp;max=50"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test II</button></a>
+<a href="cplusplus_mock_testc34b.html?min=51&amp;max=75"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test III</button></a>
+<a href="cplusplus_mock_testabbb.html?min=76&amp;max=100"><button type="button" class="btn btn-default btn-mt"><i class="icon  icon-file-pdf-o"></i> Mock Test IV</button></a>
+<style>
+.B, .answer-sheet {
+   display:none !important;
+}
+.Q a {
+   pointer-events: none;
+   cursor: default;
+}
+</style>
+<h1>C++ Mock Test IV </h1>
+<div class="QA">
+<div class="Q" id="Q76">
+<p><span>Q 1</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   float t = 2;
+	
+	switch(t) {
+      case 2: cout&lt;&lt;”Hi”;
+		default: cout&lt;&lt;"Hello";
+	}
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Hi</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - HiHello</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Hello</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Error</a></p>
+</div>
+<div class="A" id='A76'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>Error, switch expression can’t be float value</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   float t = 2;
+	
+	switch(t) {
+		case 2: cout&lt;&lt;”Hi”;
+		default: cout&lt;&lt;"Hello";
+	}
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('76')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q77">
+<p><span>Q 2</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   int a[] = {1, 2}, *p = a;
+   
+   cout&lt;&lt;p[1]; 
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 1</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - 2</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Compile error</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Runtime error</a></p>
+</div>
+<div class="A" id='A77'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>as ‘p’ holds the base address then we can access array using ‘p’ just like with ‘a’</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   int a[] = {1, 2}, *p = a;
+   
+   cout&lt;&lt;p[1]; 
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('77')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q78">
+<p><span>Q 3</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   int i = 13, j = 60;
+   
+   i^=j;
+   j^=i;
+   i^=j;
+   cout&lt;&lt;i&lt;&lt;" "&lt;&lt;j;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 73 73</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - 60 13</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 13 60</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 60 60</a></p>
+</div>
+<div class="A" id='A78'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>60 13, its swapping.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   int i = 13, j = 60;
+   
+   i^=j;
+   j^=i;
+   i^=j;
+   cout&lt;&lt;i&lt;&lt;" "&lt;&lt;j;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('78')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q79">
+<p><span>Q 4</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {	
+   union abc {
+		int x;
+		char ch;
+	} var;
+	
+   var.ch = 'A';
+   cout&lt;&lt;var.x;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - A</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Garbage value</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - 65</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 97</a></p>
+</div>
+<div class="A" id='A79'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>65, as the union variables share common memory for all its elements, x gets ‘A’ whose ASCII value is 65 and is printed.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {	
+   union abc {
+		int x;
+		char ch;
+	} var;
+	
+   var.ch = 'A';
+   cout&lt;&lt;var.x;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('79')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q80">
+<p><span>Q 5</span> - Compiler generates ___ file</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Executable code</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Object code</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Assembly code</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - None of the above.</a></p>
+</div>
+<div class="A" id='A80'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>Compilation is the process of translating high level language statements into equivalent machine code, which is object code.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('80')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q81">
+<p><span>Q 6</span> -  Special symbol permitted with in the identifier name.</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - $</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - @</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - _</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - .</a></p>
+</div>
+<div class="A" id='A81'>
+<h3>Answer : C</h3>
+<h3>Explaination</h3>
+<p>The only permitted special symbol is under score (_) in the identifier.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('81')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q82">
+<p><span>Q 7</span> - A single line comment in C++ language source code can begin with _____</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - ;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - :</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - /*</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - //</a></p>
+</div>
+<div class="A" id='A82'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>Two immediate forward slashes are used to comment a single line. A single can be commented by beginning with /* and should be terminated with */ , in general used for multi-line comments.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('82')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q83">
+<p><span>Q 8</span> - An inline function can execute faster than a normal function.</p>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - True</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - False</a></p>
+</div>
+<div class="A" id='A83'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>As the code of inline function gets expanded at the line of call, therefore it gets executed faster with no overhead of context switch</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('83')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q84">
+<p><span>Q 9</span> - Choose the invalid identifier from the below</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Int</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - bool</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - DOUBLE</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - __0__</a></p>
+</div>
+<div class="A" id='A84'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>bool is the reserved keyword and cannot be used an identifier name.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('84')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q85">
+<p><span>Q 10</span> - Identify the C++ compiler of Linux</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - cpp</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - g++</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Borland</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - vc++</a></p>
+</div>
+<div class="A" id='A85'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>g++ is GNU C++ compiler for linux. Borland and vc++ (Microsoft visual c++) for windows.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('85')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q86">
+<p><span>Q 11</span> - Following is the invalid inclusion of a file to the current program. Identify it</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - #include &lt;file&gt;</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - #include "file"</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - #include &lt; file</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - All of the above are invalid</a></p>
+</div>
+<div class="A" id='A86'>
+<h3>Answer : C</h3>
+<h3>Explaination</h3>
+<p>option (a) & (b) are valid. There is no such syntax or provision as in option (c).</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('86')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>
+<div class="QA">
+<div class="Q" id="Q87">
+<p><span>Q 12</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+int x = 5;
+
+int &amp;f() {
+	return x;
+}
+main() {
+	f() = 10;
+   cout&lt;&lt;x;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 5</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Address of ‘x’</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Compile error</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - 10</a></p>
+</div>
+<div class="A" id='A87'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>A function can return reference, hence it can appear on the left hand side of the assignment operator.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+int x = 5;
+
+int &amp;f() {
+	return x;
+}
+main() {
+	f() = 10;
+   cout&lt;&lt;x;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('87')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q88">
+<p><span>Q 13</span> - The default executable generation on UNIX for a C++ program is ___</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - a.exe</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - a</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - a.out</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - out.a</a></p>
+</div>
+<div class="A" id='A88'>
+<h3>Answer : C</h3>
+<h3>Explaination</h3>
+<p>“a.out” is the default name of the executable generated on both the UNIX and Linux operating systems.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('88')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q89">
+<p><span>Q 14</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+void f() {
+	static int i = 3;
+   
+	cout&lt;&lt;i;
+	if(--i) f();
+}
+main() {
+	f();
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 3 2 1 0</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - 3 2 1</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 3 3 3</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Compile error</a></p>
+</div>
+<div class="A" id='A89'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>As the static variable retains its value from the function calls, the recursion happens thrice.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+void f() {
+	static int i = 3;
+   
+	cout&lt;&lt;i;
+	if(--i) f();
+}
+main() {
+	f();
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('89')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q90">
+<p><span>Q 15</span> - What is the output of the following program?</p>
+<pre class="prettyprint notranslate">
+main() {
+}
+</pre>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - No output</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Garbage</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Compile error</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Runtime error</a></p>
+</div>
+<div class="A" id='A90'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>It is valid to have main() function empty, therefore producing no displayable output.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('90')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q91">
+<p><span>Q 16</span> - Does both the loops in the following programs prints the correct string length?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   int i;
+   
+   char s[] = "hello";
+
+   for(i=0; s[i]; ++i);
+      cout&lt;&lt;i&lt;&lt;endl;
+
+   i=0; 
+   
+   while(s[i++]);
+      cout&lt;&lt;i;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Yes, both the loops prints the correct length</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Only for loop prints the correct length</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Only while loop prints the correct length</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Compile error in the program.</a></p>
+</div>
+<div class="A" id='A91'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>In while loop 'i' gets incremented after checking for '\0', hence giving 1 more than the length.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   int i;
+   
+   char s[] = "hello";
+
+   for(i=0; s[i]; ++i);
+      cout&lt;&lt;i&lt;&lt;endl;
+
+   i=0;
+   
+   while(s[i++]);
+      cout&lt;&lt;i;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('91')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q92">
+<p><span>Q 17</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {	
+   int a[] = {10, 20, 30};
+   
+	cout&lt;&lt;*a+1;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 10</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 20</a></p>
+<p><a class="true" href="javascript:void(0);"><span>C</span> - 11</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 21</a></p>
+</div>
+<div class="A" id='A92'>
+<h3>Answer : C</h3>
+<h3>Explaination</h3>
+<p>*a refers to 10 and adding a 1 to it gives 11.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {	
+   int a[] = {10, 20, 30};
+   
+	cout&lt;&lt;*a+1;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('92')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q93">
+<p><span>Q 18</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   char s[] = "Fine";
+	*s = 'N';
+   
+   cout&lt;&lt;s&lt;&lt;endl;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Fine</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Nine</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Compile error</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Runtime error</a></p>
+</div>
+<div class="A" id='A93'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>*s=’N’, changes the character at base address to ‘N’.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   char s[] = "Fine";
+	*s = 'N';
+   
+   cout&lt;&lt;s&lt;&lt;endl;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('93')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q94">
+<p><span>Q 19</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   char *s = "Fine";
+	*s = 'N';
+   
+   cout&lt;&lt;s&lt;&lt;endl;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Fine</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Nine</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Compile error</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Runtime error</a></p>
+</div>
+<div class="A" id='A94'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>*s=’N’, trying to change the character at base address to ‘N’ of a constant string leads to runtime error.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() {
+   char *s = "Fine";
+	*s = 'N';
+   
+   cout&lt;&lt;s&lt;&lt;endl;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('94')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q95">
+<p><span>Q 20</span> - What is the built in library function to compare two strings?</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - string_cmp()</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - strcmp()</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - equals()</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - str_compare()</a></p>
+</div>
+<div class="A" id='A95'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>strcmp() is the built in function from “string.h” to compare two strings. Returns 0 if both are same strings. Returns -1 if first &lt; second string. Returns 1 first &gt; second.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('95')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q96">
+<p><span>Q 21</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+void main() {
+   char *s = "C++";
+   
+	cout&lt;&lt;s&lt;&lt;" ";
+	s++;
+	cout&lt;&lt;s&lt;&lt;" ";
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - C++ C++</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - C++ ++</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - ++ ++</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Compile error</a></p>
+</div>
+<div class="A" id='A96'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>After s++, s points the string “++”.</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+void main() {
+   char *s = "C++";
+   
+	cout&lt;&lt;s&lt;&lt;" ";
+	s++;
+	cout&lt;&lt;s&lt;&lt;" ";
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('96')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q97">
+<p><span>Q 22</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+void main() {
+   char s[] = "C++";
+   
+	cout&lt;&lt;s&lt;&lt;" ";
+	s++;
+	cout&lt;&lt;s&lt;&lt;" ";
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - C++ C++</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - C++ ++</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - ++ ++</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Compile error</a></p>
+</div>
+<div class="A" id='A97'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>‘s’ refers to a constant address and cannot be incremented.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+void main() {
+   char s[] = "C++";
+   
+	cout&lt;&lt;s&lt;&lt;" ";
+	s++;
+	cout&lt;&lt;s&lt;&lt;" ";
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('97')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q98">
+<p><span>Q 23</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+#include&lt;string.h&gt;
+
+using namespace std;
+main() { 
+   char s[] = "Hello\0Hi";
+   
+   cout&lt;&lt;strlen(s)&lt;&lt;" "&lt;&lt;sizeof(s);
+}
+</pre>
+<p><a class="true" href="javascript:void(0);"><span>A</span> - 5 9</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - 7 20</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - 5 20</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - 8 20</a></p>
+</div>
+<div class="A" id='A98'>
+<h3>Answer : A</h3>
+<h3>Explaination</h3>
+<p>Length of the string is count of character upto ‘\0’. sizeof – reports the size of the array.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+#include&lt;string.h&gt;
+
+using namespace std;
+main() { 
+   char s[] = "Hello\0Hi";
+   
+   cout&lt;&lt;strlen(s)&lt;&lt;" "&lt;&lt;sizeof(s);
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('98')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q99">
+<p><span>Q 24</span> - What is the output of the following program?</p>
+<pre class="prettyprint">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   class student { 
+      int rno = 10;
+   } v;
+  
+   cout&lt;&lt;v.rno;
+}
+</pre>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - 10</a></p>
+<p><a class="false" href="javascript:void(0);"><span>B</span> - Garbage</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Runtime error</a></p>
+<p><a class="true" href="javascript:void(0);"><span>D</span> - Compile error</a></p>
+</div>
+<div class="A" id='A99'>
+<h3>Answer : D</h3>
+<h3>Explaination</h3>
+<p>Class member variables cannot be initialized.</p>
+<pre class="prettyprint tryit">
+#include&lt;iostream&gt;
+
+using namespace std;
+main() { 
+   class student { 
+      int rno = 10;
+   } v;
+  
+   cout&lt;&lt;v.rno;
+}
+</pre>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('99')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div><div class="QA">
+<div class="Q" id="Q100">
+<p><span>Q 25</span> - i) Exceptions can be traced and controlled using conditional statements.</p>
+<p>ii) For critical exceptions compiler provides the handler</p>
+<p><a class="false" href="javascript:void(0);"><span>A</span> - Only (i) is true</a></p>
+<p><a class="true" href="javascript:void(0);"><span>B</span> - Only (ii) is true</a></p>
+<p><a class="false" href="javascript:void(0);"><span>C</span> - Both (i) &amp; (ii) are true</a></p>
+<p><a class="false" href="javascript:void(0);"><span>D</span> - Both (i) &amp;&amp; (ii) are false</a></p>
+</div>
+<div class="A" id='A100'>
+<h3>Answer : B</h3>
+<h3>Explaination</h3>
+<p>Conditional statements are used to take alternate actions depending upon certain condition but not multi branching. C++ too provides some critical exception handlers.</p>
+</div>
+<div class="B">
+<button type="button" class="btn btn-default btn-xsm" onclick="javascript:showAnswer('100')"><i class="icon  icon-sort"></i> <span>Show Answer</span></button>
+</div>
+</div>   <h1 class="answer-sheet">Answer Sheet</h1>
+   <table class="table table-bordered">
+   <tr>
+   <th style="width:50%;">Question Number</th>
+   <th style="width:50%;">Answer Key</th>
+   </tr>      <tr>
+      <td>1</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>2</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>3</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>4</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>5</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>6</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>7</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>8</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>9</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>10</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>11</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>12</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>13</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>14</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>15</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>16</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>17</td>
+      <td>C</td>
+      </tr>      <tr>
+      <td>18</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>19</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>20</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>21</td>
+      <td>B</td>
+      </tr>      <tr>
+      <td>22</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>23</td>
+      <td>A</td>
+      </tr>      <tr>
+      <td>24</td>
+      <td>D</td>
+      </tr>      <tr>
+      <td>25</td>
+      <td>B</td>
+      </tr></table><div class="download-btn">
+<a target="_blank" href="pdf/cplusplus_mock_test_iv.pdf"><i class="fa fa-download"></i> Download</a>
+</div>
+<script type="text/javascript" src="../theme/js/exams.js"></script>
+<div class="parent-file">cpp_questions_answers.htm</div>
+<div class="mui-container-fluid button-borders show">
+<div class="pre-btn">
+<a href="cpp_questions_answers.html"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="cpp_questions_answers.html">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div>
+   <div id="vi_bottom_ads"></div>
+   <script>
+     (function() {
+     var adPos = document.getElementById('vi_bottom_ads');
+     var mobile_ad_id = "vi_9012177";
+     var desktop_ad_id = "vi_9013190";
+     var ad_id = window.innerWidth <= 768 ? mobile_ad_id : desktop_ad_id;
+     adPos.innerHTML = '<div class="adsbyvli" data-ad-slot="' + ad_id + '"></div>';
+     (vitag.displayInit = window.vitag.displayInit || []).push(function () {
+         viAPItag.display(ad_id);
+     });
+     }())
+   </script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;">
+<div class="adsbyvli" data-ad-slot="vi_9012177"></div>
+<script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_9012177")})</script>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div class="adsbyvli" data-ad-slot="vi_9012177"></div>
+<script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_9012177")})</script>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div class="adsbyvli" data-ad-slot="vi_9013289"></div>
+<script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_9013289")})</script>
+</div>
+<div class="space-bottom" style="margin-bottom:15px;"></div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"><img class="img-responsive" src="../images/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_privacy.htm#cookies"> <i class="fal fa-shield-check"></i> Cookies Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">&copy; Copyright 2019. All Rights Reserved.</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232293-17"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+</body>
+
+<!-- Mirrored from www.tutorialspoint.com/cplusplus/cplusplus_mock_test.htm?min=76&max=100 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Oct 2019 02:36:18 GMT -->
+</html>
